@@ -2,10 +2,15 @@
 
 echo "Adding YAD deployment scripts"
 
-cp -rT /var/share/etc/ /etc/
+mkdir /etc/yad/
 
 cd /etc/yad/
 git clone https://github.com/AOE-T3Rookies-2016/YAD.git deploy
 
-cp -rT /var/share/usr/ /usr/
-chmod +x /usr/local/bin/yad_t3rookies_typo3_devbox
+mkdir -p /etc/yad/t3rookies/typo3/
+
+wget https://raw.githubusercontent.com/AOE-T3Rookies-2016/devbox/master/share/etc/yad/t3rookies/typo3/devbox.sh
+
+cd /var/share/usr/
+wget https://raw.githubusercontent.com/AOE-T3Rookies-2016/devbox/master/share/usr/local/bin/yad_t3rookies_typo3_devbox
+chmod +x yad_t3rookies_typo3_devbox
