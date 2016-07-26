@@ -14,6 +14,6 @@ export YAD_INSTALL_SCRIPT='setup/install.sh'
 
 # package containing at least an install.sh install script
 # supports tgz and zip packages
-export YAD_PACKAGE=https://t3rookies.random-ip.com/job/t3rookies_build/lastSuccessfulBuild/artifact/package.tar.gz
+export YAD_PACKAGE=https://t3rookies.integration.random-ip.com/job/t3rookies_build/lastSuccessfulBuild/artifact/package.tar.gz
 export YAD_PACKAGE_USERNAME='package'
 export YAD_PACKAGE_PASSWORD='#############'
